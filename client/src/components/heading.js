@@ -4,12 +4,12 @@ import { connect } from 'react-redux';
 
 class Message extends Component {
 	render() {
-		return <h1>{this.props.text}</h1>;
+		return <h1>{this.props.ob}</h1>;
 	}
 }
 
 const mapStateToProps = (state) => ({
-	text: state.text
+	ob: state.defaultText
 });
 
 export default connect(mapStateToProps)(Message);
